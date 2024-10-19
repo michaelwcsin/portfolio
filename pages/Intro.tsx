@@ -20,13 +20,13 @@ const Intro = () => {
       animate="visible"
       exit="exit"
       variants={variants}
-      transition={{ duration: 1 }}
+      transition={{ duration: 0.5 }}
     >
-      <p className="text-[6vw] font-bold leading-none tracking-tighter">
+      <p className="text-[6vw] font-extrabold leading-none tracking-tighter">
         Hi. I&apos;m Michael Sin,
       </p>
       <FlipWords
-        className="text-[4vw] font-semibold text-[#0077b6] leading-none tracking-widest text-left -ml-1"
+        className="text-[4vw] font-bold text-[#0077b6] leading-none tracking-widest text-left -ml-1"
         words={flipperWords}
       />
     </motion.div>

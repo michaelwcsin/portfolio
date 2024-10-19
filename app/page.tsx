@@ -7,7 +7,6 @@ export default function Home() {
     <div>
       <Header />
       <Intro />
-      <p className="font-bold">My Portfolio</p>
       <Footer />
     </div>
   );
