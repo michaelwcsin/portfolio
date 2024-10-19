@@ -2,7 +2,7 @@ import React from "react";
 
 const IconLogo = () => {
   return (
-    <div className="flex p-10 items-center">
+    <div className="flex items-center">
       <a href="/" className="relative z-20">
         <svg
           width="46"

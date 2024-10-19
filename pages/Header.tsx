@@ -3,10 +3,10 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="fixed w-full">
-      <div className="bg-red-400 m-10 flex justify-between">
+    <div className="fixed w-full z-10">
+      <div className="m-10 h-full flex justify-between">
         <IconLogo />
-        <div className="flex text-center items-center p-10">something</div>
+        <div className="flex text-center items-center">something</div>
       </div>
     </div>
   );
