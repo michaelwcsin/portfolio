@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Montserrat } from "next/font/google";
 import localFont from "next/font/local";
 import { ThemeProvider } from "../components/theme-provider";
 import "./globals.css";
@@ -14,9 +15,14 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+
 export const metadata: Metadata = {
-  title: "mwcs",
-  description: "mwcs portfolio.",
+  title: "Michael Sin",
+  description: "Welcome to my portfolio.",
 };
 
 export default function RootLayout({
@@ -26,9 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={montserrat.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
