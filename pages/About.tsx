@@ -28,10 +28,10 @@ const About = () => {
           WebkitMaskPosition: `${x - size / 2}px ${y - size / 2}px`,
           WebkitMaskSize: `${size}px`,
         }}
-        transition={{ type: "tween", ease: "backOut", duration: 1 }}
+        transition={{ type: "tween", ease: "backOut", duration: 1.5 }}
       >
         <p
-          className="w-full: md:w-[60vw] p-[40px] font-bold"
+          className="w-full md:w-[60vw] p-[40px] font-bold"
           onMouseEnter={() => {
             setIsHovered(true);
           }}
