@@ -8,7 +8,7 @@ const About = () => {
   // Mask behavior for mouse cursor on expand
   const [isHovered, setIsHovered] = useState(false);
   const { x, y } = useMousePosition();
-  const size = isHovered ? 500 : 40;
+  const size = isHovered ? 1250 : 40;
 
   return (
     <div className="h-[100vh] m-0">
@@ -28,7 +28,7 @@ const About = () => {
           WebkitMaskPosition: `${x - size / 2}px ${y - size / 2}px`,
           WebkitMaskSize: `${size}px`,
         }}
-        transition={{ type: "tween", ease: "backOut", duration: 0.5 }}
+        transition={{ type: "tween", ease: "backOut", duration: 1 }}
       >
         <p
           className="w-full: md:w-[60vw] p-[40px] font-bold"
