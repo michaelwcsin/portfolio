@@ -15,7 +15,7 @@ const Intro = () => {
 
   return (
     <motion.div
-      className="h-screen flex flex-col justify-center min-w-0 ml-10"
+      className="h-screen flex flex-col justify-center min-w-0 ml-[7vw]"
       initial="hidden"
       animate="visible"
       exit="exit"

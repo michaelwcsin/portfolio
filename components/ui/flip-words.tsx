@@ -5,7 +5,7 @@ import React, { useCallback, useEffect, useRef, useState } from "react";
 
 export const FlipWords = ({
   words,
-  duration = 3000,
+  duration = 2000,
   className,
 }: {
   words: string[];
