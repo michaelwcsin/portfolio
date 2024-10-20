@@ -45,7 +45,7 @@ const About = () => {
           <br></br>Outside of researching and learning more about technology, I
           like to dive into numerous hobbies. Some of the few I&apos;ve thrown
           myself into over the last few years is{" "}
-          <span className="text-[#ec4e39]">golfing, hiking, and fishing.</span>
+          <span className="text-[#ec4e39]">golfing and hiking.</span>
         </p>
       </motion.div>
 
