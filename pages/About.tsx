@@ -13,7 +13,7 @@ const About = () => {
   return (
     <div className="h-[100vh] m-0">
       <motion.div
-        className="text-[#F7F7F7] pl-[5vw] w-full h-full flex items-center text-[2.5vw] leading-[50px] absolute"
+        className="text-[#F7F7F7] pl-[5vw] w-full h-full flex items-center text-[4vw] md:text-[2.5vw] leading-[25px] md:leading-[50px] absolute"
         style={
           {
             maskImage: "url('/maskCursor.svg')",
@@ -31,7 +31,7 @@ const About = () => {
         transition={{ type: "tween", ease: "backOut", duration: 0.5 }}
       >
         <p
-          className="w-[60vw] p-[40px] font-bold"
+          className="w-full: md:w-[60vw] p-[40px] font-bold"
           onMouseEnter={() => {
             setIsHovered(true);
           }}
@@ -49,8 +49,8 @@ const About = () => {
         </p>
       </motion.div>
 
-      <div className="text-black w-full h-full flex items-center pl-[5vw] text-[2.5vw] leading-[50px]">
-        <p className="w-[60vw] p-[40px] font-bold">
+      <div className="text-black w-full h-full flex items-center pl-[5vw] text-[4vw] leading-[25px] md:text-[2.5vw] md:leading-[50px]">
+        <p className="w-full md:w-[60vw] p-[40px] font-bold">
           <span className="font-black text-slate-500 text-[8vw]">
             About me<span className="text-[#f72585]">.</span>
           </span>

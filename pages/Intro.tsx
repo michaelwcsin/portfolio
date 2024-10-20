@@ -21,11 +21,11 @@ const Intro = () => {
       variants={variants}
       transition={{ duration: 0.5 }}
     >
-      <p className="text-[6vw] font-extrabold leading-none tracking-tighter">
+      <p className="text-[8vw] md:text-[6vw] font-extrabold leading-none tracking-tighter">
         Hi. I&apos;m Michael Sin,
       </p>
       <FlipWords
-        className="text-[4vw] font-bold text-[#0077b6] leading-none tracking-widest text-left -ml-1"
+        className="text-[6vw] md:text-[4vw] font-bold text-[#0077b6] leading-none tracking-widest text-left -ml-2 md:-ml-1"
         words={flipperWords}
       />
     </motion.div>

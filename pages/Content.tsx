@@ -24,7 +24,7 @@ const Section2 = () => {
       <h1 className="text-[8vw] leading-[.9] mt-10 font-bold tracking-tighter">
         Connect with me.
       </h1>
-      <p className="mb-2 text-white">Copyright © Michael Sin</p>
+      <p className="text-sm md:mb-2 text-white">Copyright © Michael Sin</p>
     </div>
   );
 };
@@ -32,7 +32,7 @@ const Section2 = () => {
 const Nav = () => {
   return (
     <div className="flex shrink-0 gap-20">
-      <div className="flex text-[32px] font-semibold flex-col gap-4 text-white">
+      <div className="flex text-[24px] md:text-[32px] font-semibold flex-col gap-4 text-white">
         <a
           href="https://github.com/michaelwcsin"
           target="_blank"

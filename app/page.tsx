@@ -28,7 +28,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="overflow-hidden">
       <Header />
       <Intro />
       <About />
