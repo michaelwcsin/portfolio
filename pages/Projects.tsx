@@ -13,10 +13,10 @@ const Projects = () => {
   return (
     <div className="flex h-screen w-full items-center">
       <div className="flex-col w-[40vw] items-center gap-[10vw] m-[7vw]">
-        <p className="font-bold text-[.8vw] w-[80vw] text-center mb-10">
+        <p className="font-bold hidden md:block text-[.8vw] w-[80vw] text-center mb-10">
           Hello, this portfolio, more importantly this section of projects is
-          currently under construction as of Oct 20, 2024. If you'd like to know
-          more or would like a live demo. Please contact me.
+          currently under construction as of Oct 20, 2024. If you&apos;d like to
+          know more or would like a live demo. Please contact me.
         </p>
         <Tree
           className="overflow-hidden w-full h-[70vh]"

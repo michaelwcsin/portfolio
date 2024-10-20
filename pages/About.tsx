@@ -43,8 +43,8 @@ const About = () => {
             About me<span className="text-slate-500">.</span>
           </span>
           <br></br>Outside of researching and learning more about technology, I
-          like to dive into numerous hobbies. Some of the few I've thrown myself
-          into the last few years is{" "}
+          like to dive into numerous hobbies. Some of the few I&apos;ve thrown
+          myself into the last few years is{" "}
           <span className="text-[#ec4e39]">golfing, hiking, and fishing.</span>
         </p>
       </motion.div>
@@ -55,7 +55,7 @@ const About = () => {
             About me<span className="text-[#f72585]">.</span>
           </span>
           <br></br>
-          I'm a recent B.Sc graduate with a major in{" "}
+          I&apos;m a recent B.Sc graduate with a major in{" "}
           <span className="text-[#ec4e39]">Computer Science.</span> I view
           myself a lifelong learner, and the tech industry provides the best
           environment to continually hone my skills.
