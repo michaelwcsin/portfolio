@@ -1,5 +1,8 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { cn } from "@/lib/utils";
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
 import { FileIcon, FolderIcon, FolderOpenIcon } from "lucide-react";
 import React, {
@@ -10,10 +13,6 @@ import React, {
   useEffect,
   useState,
 } from "react";
-
-import { Button } from "@/components/ui/button";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { cn } from "@/lib/utils";
 
 type TreeViewElement = {
   id: string;
@@ -44,7 +43,9 @@ const useTree = () => {
   return context;
 };
 
-interface TreeViewComponentProps extends React.HTMLAttributes<HTMLDivElement> {}
+interface TreeViewComponentProps extends React.HTMLAttributes<HTMLDivElement> {
+  placeholder?: boolean;
+}
 
 type Direction = "rtl" | "ltr" | undefined;
 
@@ -202,7 +203,9 @@ const TreeIndicator = forwardRef<
 TreeIndicator.displayName = "TreeIndicator";
 
 interface FolderComponentProps
-  extends React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Item> {}
+  extends React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Item> {
+  placeholder?: boolean;
+}
 
 type FolderProps = {
   expandedItems?: string[];
@@ -215,18 +218,15 @@ const Folder = forwardRef<
   HTMLDivElement,
   FolderProps & React.HTMLAttributes<HTMLDivElement>
 >(
-  (
-    {
-      className,
-      element,
-      value,
-      isSelectable = true,
-      isSelect,
-      children,
-      ...props
-    },
-    ref
-  ) => {
+  ({
+    className,
+    element,
+    value,
+    isSelectable = true,
+    isSelect,
+    children,
+    ...props
+  }) => {
     const {
       direction,
       handleExpand,
@@ -287,7 +287,6 @@ const File = forwardRef<
   HTMLButtonElement,
   {
     value: string;
-    handleSelect?: (id: string) => void;
     isSelectable?: boolean;
     isSelect?: boolean;
     fileIcon?: React.ReactNode;
@@ -297,7 +296,6 @@ const File = forwardRef<
     {
       value,
       className,
-      handleSelect,
       isSelectable = true,
       isSelect,
       fileIcon,
@@ -342,7 +340,7 @@ const CollapseButton = forwardRef<
     elements: TreeViewElement[];
     expandAll?: boolean;
   } & React.HTMLAttributes<HTMLButtonElement>
->(({ className, elements, expandAll = false, children, ...props }, ref) => {
+>(({ elements, expandAll = false, children, ...props }, ref) => {
   const { expandedItems, setExpandedItems } = useTree();
 
   const expendAllTree = useCallback((elements: TreeViewElement[]) => {

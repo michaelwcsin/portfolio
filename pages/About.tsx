@@ -44,7 +44,7 @@ const About = () => {
           </span>
           <br></br>Outside of researching and learning more about technology, I
           like to dive into numerous hobbies. Some of the few I&apos;ve thrown
-          myself into the last few years is{" "}
+          myself into over the last few years is{" "}
           <span className="text-[#ec4e39]">golfing, hiking, and fishing.</span>
         </p>
       </motion.div>
@@ -54,11 +54,10 @@ const About = () => {
           <span className="font-black text-slate-500 text-[8vw]">
             About me<span className="text-[#f72585]">.</span>
           </span>
-          <br></br>
-          I&apos;m a recent B.Sc graduate with a major in{" "}
+          <br></br>I am a recent B.Sc graduate with a major in{" "}
           <span className="text-[#ec4e39]">Computer Science.</span> I view
-          myself a lifelong learner, and the tech industry provides the best
-          environment to continually hone my skills.
+          myself a lifelong learner, and believe the tech industry provides the
+          best environment to continually hone my skills.
         </p>
       </div>
     </div>

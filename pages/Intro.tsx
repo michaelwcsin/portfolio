@@ -18,7 +18,6 @@ const Intro = () => {
       className="h-screen flex flex-col justify-center min-w-0 ml-[7vw]"
       initial="hidden"
       animate="visible"
-      exit="exit"
       variants={variants}
       transition={{ duration: 0.5 }}
     >

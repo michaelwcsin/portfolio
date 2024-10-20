@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Content() {
@@ -38,7 +39,7 @@ const Nav = () => {
           rel="noreferrer noopener"
           className="flex gap-2"
         >
-          <img width="32px" height="32px" src="iconGithub.svg" />
+          <Image src="iconGithub.svg" width={32} height={32} alt="github" />
           <p>Github</p>
         </a>
         <a
@@ -47,11 +48,11 @@ const Nav = () => {
           rel="noreferrer noopener"
           className="flex gap-2"
         >
-          <img width="32px" height="32px" src="iconLinkedin.svg" />
+          <Image src="iconLinkedin.svg" width={32} height={32} alt="linkedin" />
           <p>LinkedIn</p>
         </a>
         <a href="mailto:michael.wc.sin@gmail.com" className="flex gap-2">
-          <img width="32px" height="32px" src="iconMail.svg" />
+          <Image src="iconMail.svg" width={32} height={32} alt="mail" />
           <p>Mail</p>
         </a>
       </div>
