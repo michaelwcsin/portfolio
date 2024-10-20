@@ -56,8 +56,8 @@ const About = () => {
           </span>
           <br></br>I am a recent B.Sc graduate with a major in{" "}
           <span className="text-[#ec4e39]">Computer Science.</span> I view
-          myself as a lifelong learner, and believe the tech industry provides
-          the best environment to continually hone my skills.
+          myself as a lifelong learner, and believe that the tech industry
+          provides the best environment to continually hone my skills.
         </p>
       </div>
     </div>
