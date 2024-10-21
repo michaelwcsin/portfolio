@@ -13,19 +13,22 @@ const Projects = () => {
   return (
     <div className="flex h-screen w-full items-center">
       <div className="flex-col w-full md:w-[80vw] items-center gap-[10vw] m-[7vw]">
-        <p className="font-bold md:block text-[2.5vw] md:text-[1vw] w-full text-center mb-10">
+        <p className="font-bold md:block text-[2.5vw] md:text-[1.25vw] w-full text-center mb-10">
           Hello, this portfolio, more importantly this section of projects is
           currently under construction as of Oct 20, 2024. If you&apos;d like to
           know more or would like a live demo. Please contact me or you may
-          check out my old portfolio for more info.{" "}
-          <a
-            href="https://mwcsinold.vercel.app/"
-            rel="noreferrer noopener"
-            target="_blank"
-            className="text-blue-500"
-          >
-            mwcsin_old
-          </a>
+          check out my{" "}
+          <span>
+            <a
+              href="https://mwcsinold.vercel.app/"
+              rel="noreferrer noopener"
+              target="_blank"
+              className="text-blue-500"
+            >
+              old portfolio
+            </a>
+          </span>{" "}
+          for more info.
         </p>
         <Tree
           className="overflow-hidden w-full h-[70vh]"
