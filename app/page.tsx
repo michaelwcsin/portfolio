@@ -1,5 +1,4 @@
 "use client";
-
 import About from "@/pages/About";
 import Header from "@/pages/Header";
 import Intro from "@/pages/Intro";
