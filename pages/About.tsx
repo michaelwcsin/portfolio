@@ -39,8 +39,8 @@ const About = () => {
             setIsHovered(false);
           }}
         >
-          <span className="font-black text-slate-500 text-[8vw]">
-            About me<span className="text-[#f72585]">.</span>
+          <span className="font-black text-[#f72585] text-[8vw]">
+            About me<span className="text-slate-500">.</span>
           </span>
           <br></br>I am a recent B.Sc graduate with a major in{" "}
           <span className="text-white">Computer Science.</span> I view myself as
