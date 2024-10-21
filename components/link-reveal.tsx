@@ -50,7 +50,7 @@ const FlipLink = ({
       href={href}
       rel={rel}
       target={target}
-      className="relative max-w-[50vw] md:max-w-[40vw] lg:max-w-[35vw] overflow-hidden whitespace-nowrap text-4xl font-black uppercase sm:text-5xl md:text-6xl lg:text-7xl"
+      className="relative max-w-[55vw] md:max-w-[40vw] lg:max-w-[35vw] overflow-hidden whitespace-nowrap text-4xl font-black uppercase sm:text-5xl md:text-6xl lg:text-7xl"
       style={{
         lineHeight: 0.75,
       }}
