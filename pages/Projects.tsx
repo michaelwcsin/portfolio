@@ -54,7 +54,7 @@ const Projects = () => {
               alt="controls"
             />
           </div>
-          <div className="md:pl-[10px] w-full h-full text-ellipsis overflow-y-auto">
+          <div className="md:pl-[10px] w-full text-ellipsis overflow-y-auto">
             <Tree
               initialSelectedId="22"
               initialExpandedItems={["1", "2", "20"]}
