@@ -44,7 +44,7 @@ const Projects = () => {
         </p>
       </div>
 
-      <div className="flex md:h-[70vh] w-[80vw] rounded-2xl overflow-hidden border-[1px] border-gray-300 shadow-2xl">
+      <div className="flex md:h-[70vh] w-[90vw] md:w-[80vw] rounded-2xl overflow-hidden border-[1px] border-gray-300 shadow-2xl">
         <div className="border-r-[1px] w-[25vw] md:w-[20vw] border-gray-300">
           <div className="flex w-[60%] md:w-full h-[6vh] items-center pl-[10px] md:pl-[20px]">
             <Image
@@ -54,9 +54,8 @@ const Projects = () => {
               alt="controls"
             />
           </div>
-          <div className="md:pl-[10px] w-full text-ellipsis h-full">
+          <div className="md:pl-[10px] w-full h-full text-ellipsis overflow-y-auto">
             <Tree
-              className="overflow-y-auto overflow-x-auto"
               initialSelectedId="22"
               initialExpandedItems={["1", "2", "20"]}
               elements={projects}
