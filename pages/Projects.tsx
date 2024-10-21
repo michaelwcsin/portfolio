@@ -174,7 +174,7 @@ const Projects = () => {
           <div className="font-semibold flex w-full text-[1.5vh] h-[6vh] items-center pl-[12px] bg-white border-b-[1px] border-gray-300">
             Projects Drive
           </div>
-          <div className="h-full bg-white pl-[12px] pt-[12px] text-[1.5vh] md:text-[2vh]">
+          <div className="h-full bg-white p-[12px] text-[1.5vh] md:text-[2vh]">
             {selectedFile === "21" && (
               <p>
                 Developing new features for previous project mink_v1; some new
