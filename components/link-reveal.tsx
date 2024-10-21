@@ -3,7 +3,7 @@ import React from "react";
 
 export const RevealLinks = () => {
   return (
-    <section className="flex flex-col gap-6 px-0 py-24 text-white">
+    <section className="flex flex-col gap-10 px-0 pt-[50vh] md:pt-96 text-white">
       <FlipLink
         href="mailto:michael.wc.sin@gmail.com"
         target="_blank"

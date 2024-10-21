@@ -13,10 +13,10 @@ export default function Content() {
 const Section2 = () => {
   return (
     <div className="flex justify-between items-end">
-      <h1 className="text-[8vw] leading-[.9] mt-10 font-black tracking-tight">
+      <h1 className="text-[7vw] font-black tracking-tight leading-none">
         Connect with me.
       </h1>
-      <p className="text-sm md:mb-2 text-white">Copyright © Michael Sin</p>
+      <p className="text-sm text-white leading-none">Copyright © Michael Sin</p>
     </div>
   );
 };
