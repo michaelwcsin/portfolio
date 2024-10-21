@@ -42,9 +42,9 @@ const Projects = () => {
           for more info.
         </p>
 
-        <div className="flex gap-5 justify-center">
+        <div className="flex gap-5 justify-between md:justify-center">
           <Tree
-            className="overflow-hidden w-[25%] h-[70vh]"
+            className="overflow-hidden w-[25vw] h-[70vh]"
             initialSelectedId="22"
             initialExpandedItems={["1", "2", "20"]}
             elements={projects}

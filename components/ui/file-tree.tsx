@@ -246,7 +246,7 @@ const Folder = forwardRef<
       >
         <AccordionPrimitive.Trigger
           className={cn(
-            `flex items-center gap-1 text-sm rounded-md`,
+            `flex items-center gap-1 text-[1.7vw] md:text-sm rounded-md`,
             className,
             {
               "bg-muted rounded-md": isSelect && isSelectable,
@@ -262,7 +262,7 @@ const Folder = forwardRef<
             : closeIcon ?? <FolderIcon className="size-4" />}
           <span>{element}</span>
         </AccordionPrimitive.Trigger>
-        <AccordionPrimitive.Content className="text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down relative overflow-hidden h-full">
+        <AccordionPrimitive.Content className="text-[1.7vw] md:text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down relative overflow-hidden h-full">
           {element && indicator && <TreeIndicator aria-hidden="true" />}
           <AccordionPrimitive.Root
             dir={direction}
@@ -318,7 +318,7 @@ const File = forwardRef<
           disabled={!isSelectable}
           aria-label="File"
           className={cn(
-            "flex items-center gap-1 cursor-pointer text-sm pr-1 rtl:pl-1 rtl:pr-0 rounded-md  duration-200 ease-in-out",
+            "flex items-center gap-1 cursor-pointer text-[1.7vw] md:text-sm pr-1 rtl:pl-1 rtl:pr-0 rounded-md  duration-200 ease-in-out",
             {
               "bg-green-300": isSelected && isSelectable,
             },
