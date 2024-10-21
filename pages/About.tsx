@@ -13,7 +13,7 @@ const About = () => {
   return (
     <div className="h-[100vh] m-0">
       <motion.div
-        className="text-[#3EB489] md:pl-[5vw] w-full h-full flex items-center text-[4vw] md:text-[2.5vw] leading-[25px] md:leading-[50px] absolute"
+        className="text-[#eae0d5] md:pl-[5vw] w-full h-full flex items-center text-[4vw] md:text-[2.5vw] leading-[25px] md:leading-[50px] absolute"
         style={
           {
             maskImage: "url('/maskCursor.svg')",
@@ -39,23 +39,19 @@ const About = () => {
             setIsHovered(false);
           }}
         >
-          <span className="font-black text-[#f72585] text-[8vw]">
-            About me<span className="text-slate-500">.</span>
-          </span>
+          <span className="font-black text-[#0096c7] text-[8vw]">About me</span>
           <br></br>I am a recent B.Sc graduate with a major in{" "}
-          <span className="text-white">Computer Science.</span> I view myself as
-          a lifelong learner, and believe that the tech industry provides the
-          best environment to continually hone my skills.
+          <span className="text-[#0096c7]">Computer Science</span>. I view
+          myself as a lifelong learner, and believe that the tech industry
+          provides the best environment to continually hone my skills.
         </p>
       </motion.div>
 
-      <div className="text-black w-full h-full flex items-center md:pl-[5vw] text-[4vw] leading-[25px] md:text-[2.5vw] md:leading-[50px]">
+      <div className="text-[#264653] w-full h-full flex items-center md:pl-[5vw] text-[4vw] leading-[25px] md:text-[2.5vw] md:leading-[50px]">
         <p className="w-full md:w-[70vw] p-[40px] font-bold">
-          <span className="font-black text-slate-500 text-[8vw]">
-            About me<span className="text-[#f72585]">.</span>
-          </span>
+          <span className="font-black text-[#e56b6f] text-[8vw]">About me</span>
           <br></br>I am a recent B.Sc graduate with a major in{" "}
-          <span className="text-[#3EB489]">Computer Science.</span> I view
+          <span className="text-[#e56b6f]">Computer Science</span>. I view
           myself as a lifelong learner, and believe that the tech industry
           provides the best environment to continually hone my skills.
         </p>
