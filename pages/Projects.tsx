@@ -34,7 +34,7 @@ const ProjectInfo: React.FC<ProjectInfo> = ({ selectedFile }) => {
             <br />
             <br />
             Using this information, trends were determined and linear regression
-            was utilized for evaluate future housing prices as well. For more
+            was utilized to evaluate future housing prices as well. For more
             information please take a look at the{" "}
             <a
               href="prospect_document_sm.pdf"
