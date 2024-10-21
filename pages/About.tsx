@@ -39,7 +39,9 @@ const About = () => {
             setIsHovered(false);
           }}
         >
-          <span className="font-black text-[#0096c7] text-[8vw]">About me</span>
+          <span className="font-extrabold tracking-tight text-[#0096c7] text-[8vw]">
+            About me
+          </span>
           <br></br>I am a recent B.Sc graduate with a major in{" "}
           <span className="text-[#0096c7]">Computer Science</span>. I view
           myself as a lifelong learner, and believe that the tech industry
@@ -49,7 +51,9 @@ const About = () => {
 
       <div className="text-[#264653] w-full h-full flex items-center md:pl-[5vw] text-[4vw] leading-[25px] md:text-[2.5vw] md:leading-[50px]">
         <p className="w-full md:w-[70vw] p-[40px] font-bold">
-          <span className="font-black text-[#e56b6f] text-[8vw]">About me</span>
+          <span className="font-extrabold tracking-tight text-[#e56b6f] text-[8vw]">
+            About me
+          </span>
           <br></br>I am a recent B.Sc graduate with a major in{" "}
           <span className="text-[#e56b6f]">Computer Science</span>. I view
           myself as a lifelong learner, and believe that the tech industry
