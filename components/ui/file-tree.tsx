@@ -83,6 +83,7 @@ const Tree = forwardRef<HTMLDivElement, TreeViewProps>(
 
     const selectItem = useCallback((id: string) => {
       setSelectedId(id);
+      console.log(id); // This is where id is changed
     }, []);
 
     const handleExpand = useCallback((id: string) => {
@@ -290,6 +291,7 @@ const File = forwardRef<
     isSelectable?: boolean;
     isSelect?: boolean;
     fileIcon?: React.ReactNode;
+    onFileSelect: (value: string) => void;
   } & React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger>
 >(
   (
@@ -299,6 +301,7 @@ const File = forwardRef<
       isSelectable = true,
       isSelect,
       fileIcon,
+      onFileSelect,
       children,
       ...props
     },
@@ -322,7 +325,10 @@ const File = forwardRef<
             isSelectable ? "cursor-pointer" : "opacity-50 cursor-not-allowed",
             className
           )}
-          onClick={() => selectItem(value)}
+          onClick={() => {
+            selectItem(value);
+            onFileSelect(value);
+          }}
         >
           {fileIcon ?? <FileIcon className="size-4" />}
           {children}
