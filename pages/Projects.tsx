@@ -10,6 +10,131 @@ import {
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
+interface ProjectInfo {
+  selectedFile: string;
+}
+
+const ProjectInfo: React.FC<ProjectInfo> = ({ selectedFile }) => {
+  const renderContent = () => {
+    switch (selectedFile) {
+      // Complete work
+      case "3":
+        return (
+          <p>
+            Prospect was developed for potential home buyers & sellers in the
+            City of Edmonton. It showcases how data can be used in combination
+            with visualization to allow users to be able to make a well informed
+            decisions.
+            <br />
+            <br />
+            Included was data sourced from Edmonton&apos;s Open Data Portal such
+            as housing costs, crime stats, overall rating and walkability - how
+            accessible the neighborhood is to certain services was also
+            considered.
+            <br />
+            <br />
+            Using this information, trends were determined and linear regression
+            was utilized for evaluate future housing prices as well. For more
+            information please take a look at the{" "}
+            <a
+              href="prospect_document_sm.pdf"
+              rel="noreferrer noopener"
+              target="_blank"
+              className="text-blue-600 underline"
+            >
+              documentation
+            </a>
+            .
+          </p>
+        );
+      case "4":
+        return (
+          <video
+            className="-mt-[6px] rounded-xl drop-shadow-xl"
+            src="prospect.mp4"
+            controls
+            autoPlay
+          />
+        );
+      case "6":
+        return (
+          <p>
+            MINK is a full stack web application using MERN technology stack{" "}
+            <a
+              href="MINK_document.pdf"
+              className="text-blue-600 underline"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              documentation
+            </a>{" "}
+            can be found here.
+          </p>
+        );
+      case "7":
+        return (
+          <video
+            className="-mt-[6px] rounded-xl drop-shadow-xl"
+            src="mink.mp4"
+            controls
+            autoPlay
+          />
+        );
+      case "9":
+        return (
+          <p>
+            One of the very first full stack web application that I was able to
+            complete using MERN stack. This web application highlighted the
+            implementing a database in MongoDB, building a connection from the
+            backend to the frontend, and using React hooks.
+          </p>
+        );
+      case "10":
+        return (
+          <video
+            className="-mt-[6px] rounded-xl drop-shadow-xl"
+            src="course_registration.mp4"
+            controls
+            autoPlay
+          />
+        );
+      // Works in progress
+      case "21": // mink v2
+        return (
+          <p>
+            Developing new features for previous project mink_v1; some new ones
+            to be implemented in version 2.0 are:
+            <br />
+            <br />
+            <ul>
+              <li>1. Authentication - OAuth2</li>
+              <li>2. Implementing payment methods using Stripe</li>
+              <li>3. Updating UI/UX components</li>
+            </ul>
+          </p>
+        );
+      case "22": // kaggle
+        return (
+          <p>
+            Currently working slowly through Kaggle&apos;s free learning modules
+            which also gives certification. This is to not only review, but also
+            learn more about data analysis and machine learning.
+          </p>
+        );
+      case "23": // review
+        return (
+          <p>
+            Reviewing previous course materials, mostly a refresh on data
+            structures and algorithms.
+          </p>
+        );
+      default:
+        return <p>Coming soon!</p>;
+    }
+  };
+  return <div>{renderContent()}</div>;
+};
+
 const Projects = () => {
   const [selectedFile, setSelectedFile] = useState("22");
 
@@ -67,7 +192,7 @@ const Projects = () => {
                     value="3"
                     onFileSelect={handleFileSelect}
                   >
-                    <p>prospect_doc.pdf</p>
+                    <p>prospect.txt</p>
                   </File>
                   <File
                     fileIcon={<FileVideo size="16" />}
@@ -83,7 +208,7 @@ const Projects = () => {
                     value="6"
                     onFileSelect={handleFileSelect}
                   >
-                    <p>mink_doc.pdf</p>
+                    <p>mink.txt</p>
                   </File>
                   <File
                     fileIcon={<FileVideo size="16" />}
@@ -174,32 +299,7 @@ const Projects = () => {
             Projects Drive
           </div>
           <div className="h-full bg-white p-[12px] text-[1.5vh] md:text-[2vh]">
-            {selectedFile === "21" && (
-              <p>
-                Developing new features for previous project mink_v1; some new
-                ones to be implemented in version 2.0 are:
-                <ul>
-                  <li>1. OAuth2</li>
-                  <li>2. Updating UI/UX components</li>
-                </ul>
-              </p>
-            )}
-            {selectedFile === "22" && (
-              <p>
-                Working slowly through Kaggle&apos;s learning modules on data
-                analysis and machine learning to make sure that the material
-                remains in my brain.
-              </p>
-            )}
-            {selectedFile === "23" && (
-              <p>
-                Reviewing previous course materials, mostly a refresh on data
-                structures and algorithms.
-              </p>
-            )}
-            {selectedFile !== "21" &&
-              selectedFile !== "22" &&
-              selectedFile !== "23" && <p>Coming soon!</p>}
+            <ProjectInfo selectedFile={selectedFile} />
           </div>
         </div>
       </div>
