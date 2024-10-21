@@ -8,12 +8,12 @@ const About = () => {
   // Mask behavior for mouse cursor on expand
   const [isHovered, setIsHovered] = useState(false);
   const { x, y } = useMousePosition();
-  const size = isHovered ? 1250 : 40;
+  const size = isHovered ? 600 : 40;
 
   return (
     <div className="h-[100vh] m-0">
       <motion.div
-        className="text-[#F7F7F7] pl-[5vw] w-full h-full flex items-center text-[4vw] md:text-[2.5vw] leading-[25px] md:leading-[50px] absolute"
+        className="text-[#3EB489] md:pl-[5vw] w-full h-full flex items-center text-[4vw] md:text-[2.5vw] leading-[25px] md:leading-[50px] absolute"
         style={
           {
             maskImage: "url('/maskCursor.svg')",
@@ -28,10 +28,10 @@ const About = () => {
           WebkitMaskPosition: `${x - size / 2}px ${y - size / 2}px`,
           WebkitMaskSize: `${size}px`,
         }}
-        transition={{ type: "tween", ease: "backOut", duration: 1.5 }}
+        transition={{ type: "tween", ease: "backOut", duration: 1 }}
       >
         <p
-          className="w-full md:w-[60vw] p-[40px] font-bold"
+          className="w-full md:w-[70vw] p-[40px] font-bold"
           onMouseEnter={() => {
             setIsHovered(true);
           }}
@@ -39,23 +39,23 @@ const About = () => {
             setIsHovered(false);
           }}
         >
-          <span className="font-black text-[#f72585] text-[8vw]">
-            About me<span className="text-slate-500">.</span>
-          </span>
-          <br></br>Outside of researching and learning more about technology, I
-          like to dive into numerous hobbies. Some of the few I&apos;ve thrown
-          myself into over the last few years is{" "}
-          <span className="text-[#ec4e39]">golfing and hiking.</span>
-        </p>
-      </motion.div>
-
-      <div className="text-black w-full h-full flex items-center pl-[5vw] text-[4vw] leading-[25px] md:text-[2.5vw] md:leading-[50px]">
-        <p className="w-full md:w-[60vw] p-[40px] font-bold">
           <span className="font-black text-slate-500 text-[8vw]">
             About me<span className="text-[#f72585]">.</span>
           </span>
           <br></br>I am a recent B.Sc graduate with a major in{" "}
-          <span className="text-[#ec4e39]">Computer Science.</span> I view
+          <span className="text-white">Computer Science.</span> I view myself as
+          a lifelong learner, and believe that the tech industry provides the
+          best environment to continually hone my skills.
+        </p>
+      </motion.div>
+
+      <div className="text-black w-full h-full flex items-center md:pl-[5vw] text-[4vw] leading-[25px] md:text-[2.5vw] md:leading-[50px]">
+        <p className="w-full md:w-[70vw] p-[40px] font-bold">
+          <span className="font-black text-slate-500 text-[8vw]">
+            About me<span className="text-[#f72585]">.</span>
+          </span>
+          <br></br>I am a recent B.Sc graduate with a major in{" "}
+          <span className="text-[#3EB489]">Computer Science.</span> I view
           myself as a lifelong learner, and believe that the tech industry
           provides the best environment to continually hone my skills.
         </p>
