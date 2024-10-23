@@ -20,7 +20,7 @@ const ProjectInfo: React.FC<ProjectInfo> = ({ selectedFile }) => {
   const renderContent = () => {
     switch (selectedFile) {
       // Complete work
-      case "3":
+      case "3": // Prospect
         return (
           <p>
             Prospect was developed for potential home buyers & sellers in the
@@ -61,7 +61,7 @@ const ProjectInfo: React.FC<ProjectInfo> = ({ selectedFile }) => {
         );
       case "4":
         return <p>I hope you enjoyed the demo!</p>;
-      case "6":
+      case "6": // MINK
         return (
           <p>
             MINK is a full stack web application using MERN stack,{" "}
@@ -73,7 +73,16 @@ const ProjectInfo: React.FC<ProjectInfo> = ({ selectedFile }) => {
             >
               documentation
             </a>{" "}
-            can be found here.
+            can be found here. Using Node.js and Express.js to build REST APIs,
+            the following implemented features are as follows:
+            <br />
+            <br />
+            Current features for customers include: login, choosing a
+            restaurant, adding menu items to card, and checking out.
+            <br />
+            <br />
+            For managers: login, changing/creating menu items and editing their
+            availability and price, and accepting order requests.
             <br />
             <span>
               <Badge>MongoDB</Badge>
@@ -85,7 +94,7 @@ const ProjectInfo: React.FC<ProjectInfo> = ({ selectedFile }) => {
         );
       case "7":
         return <p>I hope you enjoyed the demo!</p>;
-      case "9":
+      case "9": // Course registration
         return (
           <p>
             One of the very first full stack web application that I was able to
@@ -102,8 +111,44 @@ const ProjectInfo: React.FC<ProjectInfo> = ({ selectedFile }) => {
             </span>
           </p>
         );
-      case "10":
-        return <p>I hope you enjoyed the demo!</p>;
+      case "12":
+        return (
+          <p>
+            An android application built using Kotlin. This application was
+            built to address the problem the hours managers spend on shift
+            scheduling for their employees.
+            <br />
+            <br />
+            To solve this problem, our team developed ShiftSage in order to
+            automate this process which allows managers to invest their time
+            more effectively towards other tasks.
+            <br />
+            <span>
+              <Badge>Kotlin</Badge>
+              <Badge>SQLite</Badge>
+              <Badge>Android Studio</Badge>
+            </span>
+          </p>
+        );
+      case "18":
+        return (
+          <p>
+            This desktop application mimics the operations of what a blockbuster
+            system may be like.
+            <br />
+            <br />
+            Features included login verification, search functionalities within
+            the movie database, creating or editing customers, as well as adding
+            new entries for the movie database within the employee login screen.
+            <br />
+            <span>
+              <Badge>MS SQL</Badge>
+              <Badge>C#</Badge>
+              <Badge>Visual Studio</Badge>
+            </span>
+          </p>
+        );
+
       // Works in progress
       case "21": // mink v2
         return (
@@ -298,7 +343,17 @@ const Projects = () => {
                     value="19"
                     onFileSelect={handleFileSelect}
                   >
-                    <p>blockbuster.mp4</p>
+                    <Dialog>
+                      <DialogTrigger>blockbuster.mp4</DialogTrigger>
+                      <DialogContent className="">
+                        <video
+                          className="rounded-lg"
+                          src="blockbuster.mp4"
+                          controls
+                          autoPlay
+                        />
+                      </DialogContent>
+                    </Dialog>
                   </File>
                 </Folder>
               </Folder>
