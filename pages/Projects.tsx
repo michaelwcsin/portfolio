@@ -80,8 +80,6 @@ const ProjectInfo: React.FC<ProjectInfo> = ({ selectedFile }) => {
               <Badge>Express.js</Badge>
               <Badge>React</Badge>
               <Badge>Node.js</Badge>
-              <Badge>JavaScript</Badge>
-              <Badge>React</Badge>
             </span>
           </p>
         );
@@ -101,8 +99,6 @@ const ProjectInfo: React.FC<ProjectInfo> = ({ selectedFile }) => {
               <Badge>Express.js</Badge>
               <Badge>React</Badge>
               <Badge>Node.js</Badge>
-              <Badge>JavaScript</Badge>
-              <Badge>React</Badge>
             </span>
           </p>
         );
