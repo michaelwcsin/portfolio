@@ -53,7 +53,7 @@ const ProjectInfo: React.FC<ProjectInfo> = ({ selectedFile }) => {
       case "6":
         return (
           <p>
-            MINK is a full stack web application using MERN technology stack{" "}
+            MINK is a full stack web application using MERN stack,{" "}
             <a
               href="MINK_document.pdf"
               className="text-blue-600 underline"
@@ -73,7 +73,8 @@ const ProjectInfo: React.FC<ProjectInfo> = ({ selectedFile }) => {
             One of the very first full stack web application that I was able to
             complete using MERN stack. This web application highlighted the
             implementing a database in MongoDB, building a connection from the
-            backend to the frontend, and using React hooks.
+            backend to the frontend using Node and Express, and using React
+            hooks for the functional components.
           </p>
         );
       case "10":
