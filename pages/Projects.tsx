@@ -371,7 +371,7 @@ const Projects = () => {
                   value="22"
                   onFileSelect={handleFileSelect}
                 >
-                  kaggled
+                  kaggle
                 </File>
                 <File
                   fileIcon={<Glasses size="16" />}
