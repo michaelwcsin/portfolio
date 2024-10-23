@@ -1,3 +1,4 @@
+import { Badge } from "@/components/ui/badge";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { File, Folder, Tree } from "@/components/ui/file-tree";
 import { projects } from "@/data/data-storage";
@@ -46,6 +47,16 @@ const ProjectInfo: React.FC<ProjectInfo> = ({ selectedFile }) => {
               documentation
             </a>
             .
+            <br />
+            <span>
+              <Badge>Excel</Badge>
+              <Badge>R</Badge>
+              <Badge>MySQL</Badge>
+              <Badge>Python</Badge>
+              <Badge>Django</Badge>
+              <Badge>JavaScript</Badge>
+              <Badge>React</Badge>
+            </span>
           </p>
         );
       case "4":
@@ -63,6 +74,15 @@ const ProjectInfo: React.FC<ProjectInfo> = ({ selectedFile }) => {
               documentation
             </a>{" "}
             can be found here.
+            <br />
+            <span>
+              <Badge>MongoDB</Badge>
+              <Badge>Express.js</Badge>
+              <Badge>React</Badge>
+              <Badge>Node.js</Badge>
+              <Badge>JavaScript</Badge>
+              <Badge>React</Badge>
+            </span>
           </p>
         );
       case "7":
@@ -75,6 +95,15 @@ const ProjectInfo: React.FC<ProjectInfo> = ({ selectedFile }) => {
             implementing a database in MongoDB, building a connection from the
             backend to the frontend using Node and Express, and using React
             hooks for the functional components.
+            <br />
+            <span>
+              <Badge>MongoDB</Badge>
+              <Badge>Express.js</Badge>
+              <Badge>React</Badge>
+              <Badge>Node.js</Badge>
+              <Badge>JavaScript</Badge>
+              <Badge>React</Badge>
+            </span>
           </p>
         );
       case "10":
