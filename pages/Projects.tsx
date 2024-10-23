@@ -168,7 +168,7 @@ const ProjectInfo: React.FC<ProjectInfo> = ({ selectedFile }) => {
         return (
           <p>
             Currently working slowly through Kaggle&apos;s free learning modules
-            which also gives certification. This is to not only review, but also
+            which also gives certification. This is not only to review, but also
             learn more about data analysis and machine learning.
           </p>
         );
