@@ -1,3 +1,4 @@
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { File, Folder, Tree } from "@/components/ui/file-tree";
 import { projects } from "@/data/data-storage";
 import {
@@ -48,14 +49,7 @@ const ProjectInfo: React.FC<ProjectInfo> = ({ selectedFile }) => {
           </p>
         );
       case "4":
-        return (
-          <video
-            className="-mt-[6px] rounded-xl drop-shadow-xl"
-            src="prospect.mp4"
-            controls
-            autoPlay
-          />
-        );
+        return <p>I hope you enjoyed the demo!</p>;
       case "6":
         return (
           <p>
@@ -72,14 +66,7 @@ const ProjectInfo: React.FC<ProjectInfo> = ({ selectedFile }) => {
           </p>
         );
       case "7":
-        return (
-          <video
-            className="-mt-[6px] rounded-xl drop-shadow-xl"
-            src="mink.mp4"
-            controls
-            autoPlay
-          />
-        );
+        return <p>I hope you enjoyed the demo!</p>;
       case "9":
         return (
           <p>
@@ -90,14 +77,7 @@ const ProjectInfo: React.FC<ProjectInfo> = ({ selectedFile }) => {
           </p>
         );
       case "10":
-        return (
-          <video
-            className="-mt-[6px] rounded-xl drop-shadow-xl"
-            src="course_registration.mp4"
-            controls
-            autoPlay
-          />
-        );
+        return <p>I hope you enjoyed the demo!</p>;
       // Works in progress
       case "21": // mink v2
         return (
@@ -198,7 +178,17 @@ const Projects = () => {
                     value="4"
                     onFileSelect={handleFileSelect}
                   >
-                    <p>prospect_demo.mp4</p>
+                    <Dialog>
+                      <DialogTrigger>prospect_demo.mp4</DialogTrigger>
+                      <DialogContent className="">
+                        <video
+                          className="rounded-lg"
+                          src="prospect.mp4"
+                          controls
+                          autoPlay
+                        />
+                      </DialogContent>
+                    </Dialog>
                   </File>
                 </Folder>
                 <Folder value="5" element="mink_v1">
@@ -214,7 +204,17 @@ const Projects = () => {
                     value="7"
                     onFileSelect={handleFileSelect}
                   >
-                    <p>mink_v1_demo.mp4</p>
+                    <Dialog>
+                      <DialogTrigger>mink_demo.mp4</DialogTrigger>
+                      <DialogContent className="">
+                        <video
+                          className="rounded-lg"
+                          src="mink.mp4"
+                          controls
+                          autoPlay
+                        />
+                      </DialogContent>
+                    </Dialog>
                   </File>
                 </Folder>
                 <Folder value="8" element="course_registration">
@@ -226,7 +226,17 @@ const Projects = () => {
                     value="10"
                     onFileSelect={handleFileSelect}
                   >
-                    <p>registration_demo.mp4</p>
+                    <Dialog>
+                      <DialogTrigger>registration_demo.mp4</DialogTrigger>
+                      <DialogContent className="">
+                        <video
+                          className="rounded-lg"
+                          src="course_registration.mp4"
+                          controls
+                          autoPlay
+                        />
+                      </DialogContent>
+                    </Dialog>
                   </File>
                 </Folder>
                 <Folder value="11" element="shift_sage">
@@ -280,7 +290,7 @@ const Projects = () => {
                   value="22"
                   onFileSelect={handleFileSelect}
                 >
-                  kaggle
+                  kaggled
                 </File>
                 <File
                   fileIcon={<Glasses size="16" />}
