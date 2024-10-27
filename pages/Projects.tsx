@@ -153,15 +153,23 @@ const ProjectInfo: React.FC<ProjectInfo> = ({ selectedFile }) => {
       case "21": // mink v2
         return (
           <p>
-            Developing new features for previous project mink_v1; some new ones
-            to be implemented in version 2.0 are:
+            Though I don't use Amazon services a lot, I do recognize the value
+            and ease it brings for many users. With the cost of living
+            constantly rising, I wanted to create a solution where people can
+            keep track of the price of the items they wish to buy.
             <br />
             <br />
-            <ul>
-              <li>1. Authentication - OAuth2</li>
-              <li>2. Implementing payment methods using Stripe</li>
-              <li>3. Updating UI/UX components</li>
-            </ul>
+            The idea of this application is to scrape Amazon's website to get
+            the price values on a daily basis. Which in turn can transform this
+            data into a visually appealing graph for users to identify trends or
+            a timing in which they can get the item for cheaper.
+            <br />
+            <br />
+            In reference, this project will also keep the history of pricing
+            data for the particular item in order to track and update the
+            average price, lowest price, and highest price. This I believe would
+            further help users with better decision-making when evaluating
+            purchase windows.
           </p>
         );
       case "22": // kaggle
@@ -187,7 +195,7 @@ const ProjectInfo: React.FC<ProjectInfo> = ({ selectedFile }) => {
 };
 
 const Projects = () => {
-  const [selectedFile, setSelectedFile] = useState("22");
+  const [selectedFile, setSelectedFile] = useState("21");
 
   const handleFileSelect = (fileValue: string) => {
     console.log(`Selected value: ${fileValue}`);
@@ -231,7 +239,7 @@ const Projects = () => {
           </div>
           <div className="md:pl-[10px] w-full text-ellipsis overflow-y-auto">
             <Tree
-              initialSelectedId="22"
+              initialSelectedId="21"
               initialExpandedItems={["1", "2", "20"]}
               elements={projects}
             >
@@ -364,7 +372,7 @@ const Projects = () => {
                   value="21"
                   onFileSelect={handleFileSelect}
                 >
-                  mink_v2
+                  price-analysis
                 </File>
                 <File
                   fileIcon={<Database size="16" />}
