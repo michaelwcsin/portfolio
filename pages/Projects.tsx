@@ -150,19 +150,19 @@ const ProjectInfo: React.FC<ProjectInfo> = ({ selectedFile }) => {
         );
 
       // Works in progress
-      case "21": // mink v2
+      case "21": // bargainquest
         return (
           <p>
-            Though I don't use Amazon services a lot, I do recognize the value
-            and ease it brings for many users. With the cost of living
+            Though I don&apos;t use Amazon services a lot, I do recognize the
+            value and ease it brings for many users. With the cost of living
             constantly rising, I wanted to create a solution where people can
             keep track of the price of the items they wish to buy.
             <br />
             <br />
-            The idea of this application is to scrape Amazon's website to get
-            the price values on a daily basis. Which in turn can transform this
-            data into a visually appealing graph for users to identify trends or
-            a timing in which they can save money.
+            The idea of this application is to scrape Amazon&apos;s website to
+            get the price values on a daily basis. Which in turn can transform
+            this data into a visually appealing graph for users to identify
+            trends or a timing in which they can save money.
             <br />
             <br />
             In addition, this project will also keep the history of pricing data
@@ -240,7 +240,7 @@ const Projects = () => {
           <div className="md:pl-[10px] w-full text-ellipsis overflow-y-auto">
             <Tree
               initialSelectedId="21"
-              initialExpandedItems={["1", "2", "20"]}
+              initialExpandedItems={["1", "2", "5", "8", "20"]}
               elements={projects}
             >
               <Folder element="completed_projects" value="1">
@@ -372,7 +372,7 @@ const Projects = () => {
                   value="21"
                   onFileSelect={handleFileSelect}
                 >
-                  price-analysis
+                  bargainquest
                 </File>
                 <File
                   fileIcon={<Database size="16" />}
