@@ -162,7 +162,7 @@ const ProjectInfo: React.FC<ProjectInfo> = ({ selectedFile }) => {
             The idea of this application is to scrape Amazon's website to get
             the price values on a daily basis. Which in turn can transform this
             data into a visually appealing graph for users to identify trends or
-            a timing in which they can get the item for cheaper.
+            a timing in which they can save money.
             <br />
             <br />
             In reference, this project will also keep the history of pricing
