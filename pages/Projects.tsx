@@ -165,11 +165,11 @@ const ProjectInfo: React.FC<ProjectInfo> = ({ selectedFile }) => {
             a timing in which they can save money.
             <br />
             <br />
-            In reference, this project will also keep the history of pricing
-            data for the particular item in order to track and update the
-            average price, lowest price, and highest price. This I believe would
-            further help users with better decision-making when evaluating
-            purchase windows.
+            In addition, this project will also keep the history of pricing data
+            for the particular item in order to track and update the average
+            price, lowest price, and highest price. I believe this would further
+            help users with better decision-making when evaluating purchasing
+            windows.
           </p>
         );
       case "22": // kaggle
