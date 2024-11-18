@@ -60,7 +60,25 @@ const ProjectInfo: React.FC<ProjectInfo> = ({ selectedFile }) => {
           </p>
         );
       case "4":
-        return <p>I hope you enjoyed the demo!</p>;
+        return (
+          <p>
+            I hope you enjoy the{" "}
+            <Dialog>
+              <DialogTrigger className="text-blue-500 underline">
+                demo
+              </DialogTrigger>
+              <DialogContent className="">
+                <video
+                  className="rounded-lg"
+                  src="prospect.mp4"
+                  controls
+                  autoPlay
+                />
+              </DialogContent>
+            </Dialog>
+            !
+          </p>
+        );
       case "6": // MINK
         return (
           <p>
@@ -93,7 +111,25 @@ const ProjectInfo: React.FC<ProjectInfo> = ({ selectedFile }) => {
           </p>
         );
       case "7":
-        return <p>I hope you enjoyed the demo!</p>;
+        return (
+          <p>
+            I hope you enjoy the{" "}
+            <Dialog>
+              <DialogTrigger className="text-blue-500 underline">
+                demo
+              </DialogTrigger>
+              <DialogContent className="">
+                <video
+                  className="rounded-lg"
+                  src="mink.mp4"
+                  controls
+                  autoPlay
+                />
+              </DialogContent>
+            </Dialog>
+            !
+          </p>
+        );
       case "9": // Course registration
         return (
           <p>
@@ -109,6 +145,26 @@ const ProjectInfo: React.FC<ProjectInfo> = ({ selectedFile }) => {
               <Badge>React</Badge>
               <Badge>Node.js</Badge>
             </span>
+          </p>
+        );
+      case "10":
+        return (
+          <p>
+            I hope you enjoy the{" "}
+            <Dialog>
+              <DialogTrigger className="text-blue-500 underline">
+                demo
+              </DialogTrigger>
+              <DialogContent className="">
+                <video
+                  className="rounded-lg"
+                  src="course_registration.mp4"
+                  controls
+                  autoPlay
+                />
+              </DialogContent>
+            </Dialog>
+            !
           </p>
         );
       case "12":
@@ -130,7 +186,7 @@ const ProjectInfo: React.FC<ProjectInfo> = ({ selectedFile }) => {
             </span>
           </p>
         );
-      case "18":
+      case "18": // Blockbuster
         return (
           <p>
             This desktop application mimics the operations of what a blockbuster
@@ -146,6 +202,26 @@ const ProjectInfo: React.FC<ProjectInfo> = ({ selectedFile }) => {
               <Badge>C#</Badge>
               <Badge>Visual Studio</Badge>
             </span>
+          </p>
+        );
+      case "19":
+        return (
+          <p>
+            I hope you enjoy the{" "}
+            <Dialog>
+              <DialogTrigger className="text-blue-500 underline">
+                demo
+              </DialogTrigger>
+              <DialogContent className="">
+                <video
+                  className="rounded-lg"
+                  src="blockbuster.mp4"
+                  controls
+                  autoPlay
+                />
+              </DialogContent>
+            </Dialog>
+            !
           </p>
         );
 
